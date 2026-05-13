@@ -1,0 +1,64 @@
+Sea “std::vector<int> v = {4,5, 6, 7};”. Utilice un método propio de vectores para agregar el
+número “8”. Luego implemente con estructuras de control el acceso, sólo a valores pares. (2 pts)
+
+
+Git
+
+Datos del desarrollador
+git config --global user.name "Richart Escobedo Q."
+git config --global user.email r.escobedo@ulasalle.edu.pe
+git config --list
+
+Working Directory (lp1)
+git init
+
+Crear hello.cpp
+
+vim hello.cpp
+---------------------------------------------------
+#include<iostream>
+
+using namespace std;
+
+int main(){
+
+    cout<<"Hola chicos"<<endl;
+
+    return 0;
+}
+---------------------------------------------------
+g++ hello.cpp ----> a.out/a.exe
+g++ hello.cpp -o hello.out ------> hello.out
+---------------------------------------------------
+
+Ver situacion
+git status
+
+
+Enviar al Repositorio Local
+add
+git add hello.cpp
+commit
+git commit -m "Hola profesor"
+
+GitIgnore
+Evitar el envio de cierto tipo de archivos o directorios
+vim .gitignore
+------------------------------------
+.gitignore
+*.exe
+*.out
+cartita_de_amor.docx
+*.jpg
+crackeadores/
+------------------------------------
+
+Enviar al Repositorio Remoto (Github)
+push
+git branch -M main
+git remote add origin https://github.com/rescobedoulasalle/pruebita.git
+git push -u origin main
+
+
+
+
